@@ -1,0 +1,12 @@
+---
+# Toggles managing the /etc/motd file
+manage_motd: true
+# Toggles managing the /etc/issue and /etc/issue.net files
+manage_issue_files: true
+
+# The source location for the Jinja2 template for the motd file.
+motd_src: motd
+# The source location for the Jinja2 template for the issue file.
+issue_src: issue
+# The source location for the Jinja2 template for the issue.net file.
+issue_net_src: issue

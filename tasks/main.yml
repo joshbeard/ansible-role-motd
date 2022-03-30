@@ -1,0 +1,31 @@
+# Role to manage /etc/issue, /etc/issue.net, and /etc/motd
+---
+- name: motd | /etc/motd
+  ansible.builtin.template:
+    src: "{{ motd_src }}"
+    dest: "/etc/motd"
+    owner: root
+    group: "0"
+    mode: '0644'
+  become: yes
+  when: manage_motd is true
+
+- name: motd | /etc/issue
+  ansible.builtin.template:
+    src: "{{ issue_src }}"
+    dest: "/etc/issue"
+    owner: root
+    group: "0"
+    mode: '0644'
+  become: yes
+  when: manage_issue_files is true
+
+- name: motd | /etc/issue.net
+  ansible.builtin.template:
+    src: "{{ issue_net_src }}"
+    dest: "/etc/issue.net"
+    owner: root
+    group: "0"
+    mode: '0644'
+  become: yes
+  when: manage_issue_files is true

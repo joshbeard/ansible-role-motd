@@ -1,0 +1,23 @@
+galaxy_info:
+  author: jbeard
+  description: Manage motd and issue files
+  company: "jbeard.dev"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.4
+  platforms:
+  - name: EL
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  - name: FreeBSD
+    versions:
+    - all
+  galaxy_tags:
+    - motd
+    - system
+    - issue
