@@ -10,7 +10,6 @@ Example `requirements.yml` file for `ansible-galaxy`:
 
 ```yaml
 roles:
-  # My homelab roles
   - src: https://github.com/joshbeard/ansible-role-motd.git
     scm: git
     version: '0.1.0'
