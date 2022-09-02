@@ -1,5 +1,5 @@
 +-----------------------------------------------------------------------------+
     Host:  {{ ansible_fqdn }}
-  System:  {{ ansible_distribution }} {{ ansible_distribution_release }}
+  System:  {{ ansible_distribution }} {{ ansible_distribution_release }} {{ ansible_distribution_version }}
 +-----------------------------------------------------------------------------+
 
